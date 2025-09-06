@@ -19,7 +19,9 @@ public class GeneticAlgorithmApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 		log.info("Iniciando o Algoritmo Genético...");
-		EvolutionalInterpolationSimulation.run();
+		double[] coef = new double[] { 1.0, 2.0, 0.3 }; // Coeficientes do polinômio alvo: 1.0 + 2.0*x + 0.3*x^2
+		EvolutionalInterpolationSimulation.run(coef);
+		log.info("Algoritmo Genético finalizado.");
 
 	}
 
